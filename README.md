@@ -28,8 +28,8 @@ A three-step pipeline in one repo, generic enough to run against **any website**
 ## Quick start
 
 ```bash
-git clone https://github.com/partick33/link-topology-explorer.git
-cd link-topology-explorer
+git clone https://github.com/partick33/internal-links-export.git
+cd internal-links-export
 
 # 1) Crawl + analyze  → ./out/topology.json (+ cluster-level Mermaid)
 node link-topology.mjs https://example.com --out ./out

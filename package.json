@@ -1,5 +1,5 @@
 {
-  "name": "link-topology-explorer",
+  "name": "internal-links-export",
   "version": "0.1.0",
   "type": "module",
   "description": "Internal link visualization tool: crawl any website, visualize its internal linking structure, export CSV edge lists / GEXF / GraphML / JSON / PNG",
@@ -27,6 +27,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/partick33/link-topology-explorer.git"
+    "url": "git+https://github.com/partick33/internal-links-export.git"
   }
 }
