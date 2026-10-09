@@ -1,0 +1,32 @@
+{
+  "name": "link-topology-explorer",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Internal link visualization tool: crawl any website, visualize its internal linking structure, export CSV edge lists / GEXF / GraphML / JSON / PNG",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "topology": "node link-topology.mjs",
+    "render": "node render-html.mjs",
+    "test": "node --test link-topology.test.mjs"
+  },
+  "keywords": [
+    "internal-links",
+    "internal-link-visualization",
+    "seo",
+    "seo-crawler",
+    "crawler",
+    "sitemap",
+    "link-graph",
+    "edge-list",
+    "gexf",
+    "graphml",
+    "cytoscape"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/partick33/link-topology-explorer.git"
+  }
+}
