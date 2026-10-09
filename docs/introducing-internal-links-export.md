@@ -4,7 +4,7 @@ published: false
 tags: seo, ai, opensource, webdev
 ---
 
-My sites are built largely by AI now — code and content. It's fast, and I'm not going back. But a few months in I noticed something nobody warns you about: **internal linking is the one lever AI never managed**, because it's site-wide state, not page state.
+My site is built largely by AI now — code and content. It's fast, and I'm not going back. But a few months in I noticed something nobody warns you about: **internal linking is the one lever AI never managed**, because it's site-wide state, not page state.
 
 Every page was generated in isolation, with local context only. Each one *looks* well-linked — sensible related links, breadcrumbs, a nav menu. Nobody, me or the model, was keeping a ledger of the whole graph. Multiply that by hundreds of pages and you get what I got:
 
@@ -23,7 +23,7 @@ So I built the instrument I needed, and open-sourced it: [internal-links-export]
 
 ## What the graph showed
 
-On my own site the picture was sobering but manageable. The real stress test was a third-party e-commerce crawl: **4,868 pages, 3,931 of them flat product URLs** at `/products/{slug}` — no category in the path, nothing to group by. As one graph: hairball. As a table: meaningless.
+My own site — [petguidecalc.com](https://petguidecalc.com/), an English pet-care guide and calculator site, 231 pages, AI-built like the rest — produced a sobering but manageable picture: the orphans, the topic twins splitting in-links, the uniform hubs. But I didn't want an instrument that only works at that scale, so I stress-tested it against a deliberately hostile target I don't own: a large third-party e-commerce site whose link graph resolves to **4,868 pages, 3,931 of them flat product URLs** at `/products/{slug}` — no category in the path, nothing to group by. As one graph: hairball. As a table: meaningless.
 
 The tool recovered the de-facto taxonomy from the link structure itself: every non-hub page grouped under its **strongest content in-link source** — whichever category page links to it most. That reconstructed **268 category groups covering 92% of products**, each small enough to actually read. This was the moment the tool became useful: the site's real information architecture exists in its links, even when it exists nowhere else.
 
