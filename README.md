@@ -25,6 +25,10 @@ A three-step pipeline in one repo, generic enough to run against **any website**
 
 ![Category group graph](assets/category-group-graph.png)
 
+## Proven on real sites
+
+Two audit targets shaped this tool: [petguidecalc.com](https://petguidecalc.com/) — the author's own 231-page, AI-built pet-care guide and calculator site, which this tool was written to untangle — and a 4,868-page third-party e-commerce site (3,931 flat `/products/{slug}` URLs) used as a large-scale stress test for the [big-site mode](#big-site-mode-implicit-category-discovery) below.
+
 ## Quick start
 
 ```bash

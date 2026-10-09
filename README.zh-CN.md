@@ -10,6 +10,8 @@
 - 集群按 URL 路径前 N 段聚合（`--cluster-depth`）。
 - 输出：`topology.json`（节点 / 边 / 孤儿页 / 入度榜 / 跨集群边 / 抓取失败清单）+ 集群级 `topology.mmd`（`--full` 追加页级图，供 mermaid.live 等使用；HTML 产品不依赖它们），stdout 打印摘要。
 
+真实运行对象：作者自己的站点 [petguidecalc.com](https://petguidecalc.com/)（231 页，AI 构建，工具即为此而写），以及一个 4,868 页的第三方电商站（3,931 个扁平 `/products/{slug}`）作为大站压测样本。
+
 ## 用法
 
 ```bash
